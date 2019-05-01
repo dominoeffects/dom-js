@@ -15,3 +15,4 @@ var para1UsingSelector = document.querySelector('#para-1');
 console.log(para1UsingSelector);
 
 para1.style.color = 'orange';
+
