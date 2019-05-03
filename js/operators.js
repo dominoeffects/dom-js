@@ -1,10 +1,34 @@
-// Take home assignment
-// 2 variables x & y that store numbers and assign some values
-// check if x is greater than 18 & y is greater than 21
-// then display "Horray!"
-// 5. else if x is greater than 14 & less than 18
-    // then check if y is greater than 18 & less than 21, display "There is time!"
-    // else display "You are late!"
+// var age = 15, // stores number
+//     accompaniedByAdult = false; // stores boolean
 
-var x = 10;
-var y = 5;
+var age = prompt('Enter your age: ');
+    // accompaniedByAdult = confirm('Are you accompanied by someone over 21?');
+
+console.log(typeof age);
+console.log(typeof parseInt (age));
+
+if(age >= 18 &&  age < 21) {
+    accompaniedByAdult = confirm('Are you accompanied by someone over 21?');
+        // if abose statement is true
+    // if (accompaniedByAdult) {
+    //     console.log('Allowed');
+    // } else{
+    //     console.log('Denied')
+    // }
+
+        // ternary operation:
+    accompaniedByAdult ? console.log('Allowed') : console.log('Denied');
+} else if (age >= 21) {
+    console.log('You are free');
+}
+else {
+        // if abose statement is false
+    console.log ('Try again next year')
+}
+
+// (age >= 18 && age < 21) ? 
+//   (accompaniedByAdult ? 
+//     console.log('Allowed') : console.log('Denied')) : 
+//   (age >=21) ? 
+//     console.log('You are free') :
+//     console.log('Try again next year');
